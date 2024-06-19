@@ -132,7 +132,6 @@ const Jobs = () => {
 							<ErrorMessage source={errors.industries} />
 						</Col>
 					</Row>
-					<Button onClick={handleSubmit(onSubmit)}>Testt</Button>
 				</div>
 
 				<div className="mt-5">

@@ -5,6 +5,7 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import ErrorMessage from "../ErrorMessage";
+import { Link } from "react-router-dom";
 
 const TokenVerificationForm = ({ setPage, submit }) => {
 	const [isChecked, setIsChecked] = useState(false);
@@ -70,14 +71,24 @@ const TokenVerificationForm = ({ setPage, submit }) => {
 									name="terms_and_conditions"
 									control={control}
 									render={({ field }) => (
-										<Form.Check
-											type="checkbox"
-											label="I accept Terms and Conditions"
-											checked={field.value}
-											onChange={(e) => {
-												field.onChange(e.target.checked);
-											}}
-										/>
+										<>
+											<Form.Check
+												type="checkbox"
+												checked={field.value}
+												onChange={(e) => {
+													field.onChange(e.target.checked);
+												}}
+											/>
+											<Form.Label>
+												<Link
+													className="ps-2 link-primary link-offset-2 link-underline-opacity-25"
+													target="_blank"
+													to={"/jobs"}
+												>
+													I accept Terms and Conditions
+												</Link>
+											</Form.Label>
+										</>
 									)}
 								/>
 							</Form.Group>

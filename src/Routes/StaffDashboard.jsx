@@ -5,6 +5,8 @@ import { ReactComponent as Icon3 } from "../Assets/svg/square-plus-solid.svg";
 import { ReactComponent as Icon4 } from "../Assets/svg/briefcase-solid.svg";
 import { ReactComponent as Icon5 } from "../Assets/svg/user-tie-solid.svg";
 import { ReactComponent as Icon6 } from "../Assets/svg/user-gear-solid.svg";
+import { ReactComponent as Icon7 } from "../Assets/svg/screwdriver-wrench-solid.svg";
+import { ReactComponent as Icon8 } from "../Assets/svg/key-solid.svg";
 import Carousel from "react-multi-carousel";
 import WordSpan from "../Components/WordSpan";
 import { useNavigate } from "react-router-dom";
@@ -132,6 +134,8 @@ const StaffDashboard = () => {
 							{ title: "Job Seekers", IconSrc: Icon4, link: "job-seekers" },
 							{ title: "Employers", IconSrc: Icon5, link: "employers" },
 							{ title: "Edit Profile", IconSrc: Icon6, link: "edit-profile" },
+							{ title: "Settings", IconSrc: Icon7, link: "settings" },
+							{ title: "Change Password", IconSrc: Icon8, link: "change-password" },
 						].map(({ title, IconSrc, link }, idx) => (
 							<button key={idx} className="btn" onClick={() => navigate(link)}>
 								<div className="text-center">
@@ -140,13 +144,13 @@ const StaffDashboard = () => {
 											<IconSrc
 												className="danger"
 												color="red"
-												width={100}
-												height={50}
+												width={75}
+												height={35}
 											/>
 											{/* <img style={{color: "red"}} src={IconSrc} alt="img" width={100} height={50} /> */}
 										</div>
 									</Hover>
-									<p className="noto-sans-font fw-bold">{title}</p>
+									<small className="lead fs-6 noto-sans-font fw-bold">{title}</small>
 								</div>
 							</button>
 						))}

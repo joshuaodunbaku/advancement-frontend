@@ -39,6 +39,7 @@ import ClientViewAllUsersPage from "./Routes/ClientDashboard/ViewAllUsersPage";
 import Jobs from "./Routes/Jobs";
 import JobDescription from "./Routes/JobDescription";
 import NotFoundPage from "./Routes/NotFoundPage";
+import ChangePassword from "./Routes/StaffDashboardMenu/ChangePassword";
 
 function App() {
 	return (
@@ -73,6 +74,7 @@ function App() {
 				<Route path="staff/dashboard/job-seekers" element={<StaffJobSeekersPage />} />
 				<Route path="staff/dashboard/post-a-job" element={<StaffPostJobPage />} />
 				<Route path="staff/dashboard/view-users" element={<StaffViewAllUsersPage />} />
+				<Route path="staff/dashboard/change-password" element={<ChangePassword />} />
 
 				{/* Client Dashboard Quick Menu */}
 				<Route path="client/dashboard" element={<ClientDashboard />} />
