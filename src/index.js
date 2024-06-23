@@ -6,7 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import { GlobalStyle } from "./Components/Styles/GlobalStyle.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css";
-import "react-datepicker/dist/react-datepicker.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

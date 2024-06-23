@@ -15,16 +15,12 @@ const Jobs = () => {
 
 	const {
 		register,
-		handleSubmit,
 		control,
 		formState: { errors },
 	} = useForm({
 		resolver: yupResolver(schema),
 	});
 
-	const onSubmit = (data) => {
-		console.log(data);
-	};
 
 	const customStyles = {
 		control: (provided, state) => ({

@@ -40,6 +40,7 @@ import Jobs from "./Routes/Jobs";
 import JobDescription from "./Routes/JobDescription";
 import NotFoundPage from "./Routes/NotFoundPage";
 import ChangePassword from "./Routes/StaffDashboardMenu/ChangePassword";
+import StaffJobPage from "./Routes/StaffJobPage";
 
 function App() {
 	return (
@@ -58,6 +59,7 @@ function App() {
 
 				<Route path="jobs" element={<Jobs />} />
 				<Route path="jobs/job-description" element={<JobDescription />} />
+				<Route path="staff-job-page" element={<StaffJobPage />} />
 
 				{/* Auth */}
 				<Route path="login" element={<Login />} />

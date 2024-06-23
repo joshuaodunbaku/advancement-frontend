@@ -223,6 +223,12 @@ const locationOptions = [
 	{ value: "vanilla", label: "Vanilla" },
 	{ value: "vanilla", label: "Vanilla" },
 ];
+const statusOption = [
+	{ value: "active", label: "Active" },
+	{ value: "inactive", label: "Inactive" },
+	{ value: "suspended", label: "Suspended" },
+	{ value: "reported", label: "Reported" },
+];
 
 export {
 	the_advancement_place_services,
@@ -233,4 +239,5 @@ export {
 	workTypeOptions,
 	locationOptions,
 	minimumQualificationOption,
+	statusOption,
 };
