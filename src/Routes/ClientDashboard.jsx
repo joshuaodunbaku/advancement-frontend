@@ -4,14 +4,15 @@ import { ReactComponent as Icon3 } from "../Assets/svg/square-plus-solid.svg";
 import { ReactComponent as Icon5 } from "../Assets/svg/bell-solid.svg";
 import { ReactComponent as Icon6 } from "../Assets/svg/user-gear-solid.svg";
 import { ReactComponent as Icon7 } from "../Assets/svg/pen-to-square-solid.svg";
-import WordSpan from "../Components/WordSpan";
 import { useNavigate } from "react-router-dom";
-import { Hover } from "../Components/Styles/GlobalStyle.css";
 import { Badge, CloseButton, Col, Form, Row } from "react-bootstrap";
 import { Controller, useForm } from "react-hook-form";
+import Select from "react-select";
+
+import WordSpan from "../Components/WordSpan";
+import { Hover } from "../Components/Styles/GlobalStyle.css";
 import ErrorMessage from "../Components/ErrorMessage";
 import ConfirmDialogComp from "../Components/ConfirmDialogComp";
-import Select from "react-select";
 import { industryOptions } from "../the-advancement-place";
 
 const ClientDashboard = () => {

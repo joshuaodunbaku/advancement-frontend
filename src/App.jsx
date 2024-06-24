@@ -41,6 +41,8 @@ import JobDescription from "./Routes/JobDescription";
 import NotFoundPage from "./Routes/NotFoundPage";
 import ChangePassword from "./Routes/StaffDashboardMenu/ChangePassword";
 import StaffJobPage from "./Routes/StaffJobPage";
+import SettingsPage from "./Routes/SettingsPage";
+import TermsAndAgreement from "./Routes/TermsAndAgreement";
 
 function App() {
 	return (
@@ -56,6 +58,7 @@ function App() {
 				<Route path="apply" element={<Apply />} />
 				<Route path="contact" element={<Contact />} />
 				<Route path="services" element={<Services />} />
+				<Route path="terms-and-agreement" element={<TermsAndAgreement />} />
 
 				<Route path="jobs" element={<Jobs />} />
 				<Route path="jobs/job-description" element={<JobDescription />} />
@@ -63,7 +66,7 @@ function App() {
 
 				{/* Auth */}
 				<Route path="login" element={<Login />} />
-				<Route path="login-as-staff" element={<StaffLogin />} />
+				<Route path="staff/login" element={<StaffLogin />} />
 				<Route path="signup" element={<SignUp />} />
 				<Route path="signup/employer" element={<EmployerRegComp />} />
 				<Route path="signup/seeker" element={<SeekerRegComp />} />
@@ -77,6 +80,7 @@ function App() {
 				<Route path="staff/dashboard/post-a-job" element={<StaffPostJobPage />} />
 				<Route path="staff/dashboard/view-users" element={<StaffViewAllUsersPage />} />
 				<Route path="staff/dashboard/change-password" element={<ChangePassword />} />
+				<Route path="staff/dashboard/settings" element={<SettingsPage />} />
 
 				{/* Client Dashboard Quick Menu */}
 				<Route path="client/dashboard" element={<ClientDashboard />} />
